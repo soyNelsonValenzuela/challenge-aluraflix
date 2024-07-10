@@ -1,0 +1,21 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    gap: 10px;
+    background-color: var(--color-black);
+    border-top: 3px solid var(--color-blue);
+    box-shadow: 0px 6px 41px 5px var(--color-blue);
+}
+.footer img{
+    background-color: transparent;
+}
+.footer h4{
+    color: var(--color-white);
+    background-color: transparent;
+    font-size: 15px;
+    font-weight:300;
+    line-height: 22px;
+}

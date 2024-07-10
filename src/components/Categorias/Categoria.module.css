@@ -1,0 +1,33 @@
+.categoria{
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    margin-bottom: 93px;
+    padding: 0 40px;
+}
+
+h3{
+    border-radius: 10px;
+    width: 30%;
+    padding: 10px ;
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+}
+
+.tituloFront{
+    background-color: var(--color-frontend);
+}
+.tituloBack{
+    background-color: var(--color-backend);
+
+}
+.tituloIyG{
+    background-color: var(--color-iyg);
+}
+
+.cardContainer{
+    display: flex;
+    gap: 30px;
+}
