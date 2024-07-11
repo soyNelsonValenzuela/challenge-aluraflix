@@ -11,7 +11,6 @@
 .contenedorBotones{
     display: flex;
     justify-content: space-around;
-
 }
 
 .btn {
@@ -19,6 +18,9 @@
   gap: 5px;
   padding: 10px;
   align-items: center;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 
 .btn img{
