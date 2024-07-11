@@ -1,0 +1,89 @@
+.nuevoVideo {
+    color: var(--color-white-smoke);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 47px;
+    padding: 0px 100px;
+    margin: 50px 0;
+    
+}
+
+.encabezado h1 {
+    font-size: 60px;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.encabezado h4 {
+   text-align: center;
+   font-weight: 400;
+   font-size: 20px;
+}
+
+.nuevoVideo form {
+    font-family: "Source Sans 3", sans-serif;
+}
+.nuevoVideo form h2 {
+    font-weight: 400 ;
+    font-size: 36px;
+    padding: 30px 0px;
+    border-top: 3px solid var( --color-dark-gray-border);
+    border-bottom:3px solid var( --color-dark-gray-border) ;
+}
+
+.inputsContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px 20px;
+    padding: 60px 0;
+}
+
+.textArea{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.textArea textarea{
+    padding: 16px;
+    border: 3px solid var(--color-dark-gray-border);
+    border-radius: 10px;
+    font-weight: 300;
+    color: var(--color-light-gray);
+    outline-color: var(--color-light-gray);
+    height: 220px;
+    resize: none;
+
+}
+
+
+
+
+
+.btnContainer{
+    display: flex;
+    gap: 20px;  
+}
+
+
+.btnGuardar, .btnLimpiar{
+    color: var(--color-white-smoke);
+    font-weight: 400;
+    padding: 15px 40px;
+    border: 2px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;    
+    width: 200px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.btnGuardar:hover, .btnLimpiar:hover{
+    border-color:  #2271D1;
+
+}
