@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom"
 import styles from "./HeaderBtn.module.css"
 
-function HeaderBtn({ url, children }) {
+ const HeaderBtn= ({ url, children }) => {
     return (
         <NavLink
             to={url}
