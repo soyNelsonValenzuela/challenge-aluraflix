@@ -1,23 +1,27 @@
-import { BrowserRouter } from "react-router-dom"
-import Header from "../components/Header/Header"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Header from "../components/Header"
 import "./AppRoutes.css"
-import Banner from "../components/Banner/Banner"
-import Categoria from "../components/Categorias/Categoria"
-import Footer from "../components/Footer/Footer"
+import Footer from "../components/Footer"
+import Home from "../Pages/Home"
+import NuevoVideo from "../Pages/NuevoVideo"
 
-function AppRoutes (){
-    return(
+function AppRoutes() {
+    return (
 
         <BrowserRouter>
             <div className="app-container">
-                <Header/>
-                <Banner/>
-                <Categoria/>
-                <Footer/>
+                <Header />
+                <div className="content">
+                    <Routes>
+                        <Route index element={<Home />}></Route>
+                        <Route path="nuevoVideo" element={<NuevoVideo />}></Route>
+                    </Routes>
+                </div>
 
+                <Footer />
 
             </div>
-        
+
         </BrowserRouter>
 
 
