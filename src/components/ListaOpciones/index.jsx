@@ -1,21 +1,27 @@
 import "./ListaOpciones.css"
 
-const ListaOpciones = () => {
+const ListaOpciones = (props) => {
 
     //metodo map --> arrelo.map((categorias,index) =>{  })
 
     const categorias = [
-        "front end",
+        "Front end",
         "Back end",
         "Innovación y gestión",
+        
     ]
+
+
+    const manejarCambio=(e)=>{
+        console.log("cambio",e.target.value)
+        props.actualizarValor(e.target.value)
+    }
 
     return <div className="campo-opciones">
         <label >Categoría</label>
-        <select required>
-            {categorias.map((categorias,index) => { 
-            return <option key={index}>{categorias}</option>
-            })}
+        <select value={props.valor} onChange={manejarCambio}>
+            <option value="" disabled defaultValue="" hidden >Seleccione categoría</option>
+            {categorias.map((categorias, index) => <option key={index} value={categorias}>{categorias}</option>)}
         </select>
     </div>
 }
